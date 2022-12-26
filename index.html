@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML Perú</title>
+
+    <style>
+        table, th, td{
+            border: 1px solid blueviolet; 
+            border-collapse: collapse;
+        }
+        
+        th, td{
+            padding: 10px
+        }
+
+        th{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>CURSO DE HTML PERUVIAN</h1>
+
+    <hr>
+    <h2>IMÁGENES</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons//Bandera_de_Bolivia_%28Estado%29.svg/1200px-Bandera_de_Bolivia_%28Estado%29.svg.png" width="500px" height="300px" alt='IMAGEN Q NO CARGA DE "¿BOLIVIA?"'>
+    <img src="http://convenioandresbello.org/cab/wp-content/uploads/2020/07/noticia48_peru_01.jpg" style="width: 650px; height: 400px;" alt="no anda xd">
+    <img src="naroz.jpg" alt="este es naroz">
+
+    <hr>
+    <h2>TEXTOS</h2>
+    <p style="color: red;">Hola <br> Mundo! </p>
+    <p style="color: grey;" title="WTF?">JEISANT PUTA LA WEA HERMANO <br> ERI MUI WN CTM HRNITO Q WEA</p>
+    <p style="color: blue;" title="xd">JEISANT NO SE LOS COLORES :D</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+        <br> ea? Laboriosam illum, esse aspernatur praes</p>
+    <pre style="color: royalblue;">
+        Naroz no está
+        Naroz se fue
+        la está pasando bomba y no lo sé.  
+    </pre>
+    <br>
+    <p>Esta es una palabra más <b>negrita.</b></p>
+    <p>Esta es una palabra más <strong>importante.</strong></p>
+    <p>La i solo cursiva <i>WEA</i></p>
+    <p>El em es cursiva e importante <em>WEA</em></p>
+    <p>H<sub>2</sub>O</p>
+    <p>2<sup>4</sup></p>
+    <p><mark>Texto marcado jijiji</mark></p>
+    <p><ins>Texto subrayado</ins></p>
+    <p><del>texto tachadinho</del></p>
+
+    <!-- Podemos comentar un codigo para que no se vea ahora, pero sin borrarlo para poder
+    usarlo después-->
+    <!--
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et recusandae, perspiciatis iusto nesciunt tempore quia voluptate magni natus? Cumque nisi ex expedita minus dolorum libero blanditiis maiores minima aliquam totam!</p>
+    -->
+
+    <hr>
+    <h2>ENLACES</h2>
+    <a href="https://www.twitch.tv/">Enlace a Twitch sin target blank</a>
+    <br>
+    <a href="https://www.twitch.tv/" target="_blank">Enlace a Twitch con target blank</a>
+    <br>
+    <a href="https://www.twitch.tv">
+        <img src="https://cloudfront-us-east-1.images.arcpublishing.com/eluniverso/3GLKG6BHD5CJNN6KREZNL3SFXQ.jpg" width="300px" height="200px">
+    </a>   
+    <br>
+    <a href="contacto_twitch.html">Enlace a la página de contacto_twitch.html</a>
+
+    <hr>
+    <h2>TABLAS</h2>
+    <table style="width: 100%;">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Mascota</th>
+        </tr>
+        <tr>
+            <td>Leonardo</td>
+            <td>Galarza</td>
+            <td>Lucky</td>
+        </tr>
+        <tr>
+            <td colspan="2">Julio Santirachi</td>
+            <td>Thor</td>
+        </tr>
+        <tr>
+            <td>Julio</td>
+            <td rowspan="2">Santirachi</td>
+            <td>Thor</td>
+        </tr>
+        <tr>
+            <td>Julio</td>
+            <td>Thor</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h2>LISTAS</h2>
+    <ul>
+        <li><a href="#">Bolivia</a></li>
+        <li>Argentina
+            <ol>
+                <li>Mar del Plata</li>
+                <li>Buenos Aires</li>
+            </ol>
+        <li>Chile</li>
+        <li>Perú</li>
+    </ul>
+    
+    <hr>
+    <h2>FORMULARIOS</h2>
+    <!--Siempre poner name="" porque esa informacion se va enviar a la base de datos con 
+        ese nombre re pelotudo.-->
+    <form>
+        Nombre:
+        <input type="text" name="firstname"> 
+        <br>
+        <input type="submit" value="Enviar">
+
+    </form>
+    <br>
+    <form action="">
+        <input type="radio" name="género" value="male"> Hombre <br>
+        <input type="radio" name="género" value="female"> Mujer <br>
+        <input type="radio" name="género" value="other"> Otro
+    </form>
+    <br>
+    <form action="">
+        <fieldset>
+            <legend>Info de Pana</legend>
+            <label for="nombre_pana">Nombre del Pana</label>
+            <input type="text" id="nombre_pana" name="nombre_del_pana">
+            <br>
+            <label for="apellido_wachin">apellido_del_bobo</label>
+            <input type="text" id="apellido_wachin" name="apellido_del_pana">
+            <br>
+            <label for="ipassword">Contraseña del pana</label>
+            <input type="password" id="ipassword" name="password">
+            <br>
+            <label for="iemail">Email:</label>
+            <input id="iemail" type="email" name="correo">
+            <br>
+            <input type="submit" value="recibi un pana">
+            <input type="reset" value="reseteame bb">
+        </fieldset>
+    </form>
+    <br>
+    <img src="lista_form.png" width="600px" height="400px">
+    <br>
+    <hr>
+    <form action="">
+        <label for="colors"></label>
+        <select name="color" id="colors">
+            <option>Violeta</option>
+            <option>Morado</option>
+            <option selected>Azul (selected por defecto)</option>   
+        </select>
+        <br>
+        <hr>
+        <label for="comentario">Comentario del Pana:</label>
+        <br>
+        <textarea name="comentario_del_pana" id="comentario" cols="30" rows="10"></textarea>
+        <br>
+        <hr>
+        <button type="button" onclick="alert('hola pana');">Clickeame estoy rica</button>
+        <input type="button" name="button_input" onclick="alert('este es otro modo de usar el button');" value="botton con input">
+        <button type="submit">Envio datos</button>
+        <br>
+        <input list="colores_datalist">
+        <datalist id="colores_datalist">
+            <option>Amarillo</option>
+            <option>Violeta</option>
+            <option>Morado</option>
+            <option>Dorado</option>
+            <option>Preto</option>       
+        </datalist>
+    </form>
+    <form>
+        <br>
+        <hr>
+        <input type="radio" id="red" name="color_url">
+        <label for="red">Rojito bro</label>
+        <br>
+        <input type="radio" id="blue" name="color_url">
+        <label for="blue">Azul bro</label>
+        <br>
+        <input type="radio" id="yellow" name="color_url">
+        <label for="yellow">Amarilla bro</label>
+        <br>
+        <hr>
+        <input type="checkbox" id="irojo" name="rojo" value="rojo">
+        <label for="irojo">Rojo</label>
+        <br>
+        <input type="checkbox" id="iverde" name="verde" value="verde">
+        <label for="iverde">Verde</label>
+        <br>
+        <input type="checkbox" id="imorado" name="morado" value="morado">
+        <label for="imorado">Morado</label>
+        <br>
+        <input type="submit" value="Enviar datos!">
+    </form>
+    <br>
+    <hr>
+    <form action="">
+        <input type="color" name="colozardos">       
+        <br>
+        <br>
+        <input type="submit" value="Enviar datos!">
+        <br>
+        <br>
+        <input type="date" name="date">
+        <br>
+        <br>
+        <input type="file" name="file">
+        <br>
+        <br>
+        <input type="datetime-local" name="datetime-local">
+        <br>
+        <br>
+        <input type="number" name="number">
+        <br>
+        <br>
+        <input type="range" name="range" max="10" min="1">
+        <br>
+        <br>
+        <input type="url" name="url">
+        <br>
+        <br>
+        <input type="search" name="search">
+        <br>
+        <br>
+        <input type="time" name="time">
+        <br>
+        <br>
+        <input type="month" name="time">
+        <br>
+        <br>
+        <input type="week" name="time">
+        <br>
+        <hr>
+    </form>
+    <form action="">
+        <input type="text" value="Kiko Palomares" readonly> <!--El readonly SI SE ENVIA cuando apretamos submit-->
+        <br>
+        <br>
+        <input type="text" value="Kiko Palomares" disabled> <!--El disabled NO SE ENVIA cuando apretamos submit-->
+        <br>
+        <br>
+        <input type="text" placeholder="solo 4 caracteres" maxlength="4">
+        <br>
+        <br>
+        <input type="number" max="10" min="-10">
+        <br>
+        <br>
+        <input type="text" placeholder="Requiere pica" required>
+        <br>
+        <br>
+        <input type="text" pattern="[A-Za-z]{3}">
+        <br>
+        <br>
+        <input type="number" step="8">
+        <br>
+        <br>
+        <input type="text" name="name" autofocus>
+        <br>
+        <br>
+        <input type="text" name="surname" autocomplete="off"> 
+        <br>
+        <br>
+        <input type="submit" value="Enviazacion">
+    </form>
+    <br>
+    <br>
+    <hr>
+    <h2>Shamoun't</h2>
+    <video width="1080" height="720" controls>
+        <source src="fabipa90_shamount.mp4" type="video/mp4">
+        Tu navegador no es compatible con el video .mp4
+    </video>
+    <br>
+    <br>
+    <h2>Audios</h2>
+    <audio controls>
+        <source src="al_q_madruga_dios_lo_desayuna.ogg" type="audio/ogg">
+    </audio>
+    <br>
+    <hr>
+    <h2>Video de YouTube</h2>
+    <iframe width="1080" height="720" src="https://www.youtube.com/embed/8sscTVbijZs" title="YouTube video player" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+    <br>
+    <hr>
+    <h2>Citas y Menciones</h2>
+    <p>Kiko Palomares <q>es un egocentrico, que siempre usa su nombre en todos los ejemplos.</q></p> <!-- El <q> se utiliza para citar cortas :D -->
+    <p>Definición de Valorant según WikiPedia:</p>
+    <blockquote cite="https://es.wikipedia.org/wiki/Valorant#:~:text=Valorant%20es%20un%20hero%20shooter,7%20de%20abril%20de%202020.">
+        Valorant es un hero shooter en primera persona multijugador gratuito desarrollado y publicado por Riot Games. El juego
+        se anunció por primera vez con el nombre en clave Project A en octubre de 2019. Fue lanzado para Microsoft Windows el 
+        2 de junio de 2020 después de su beta cerrada lanzada el 7 de abril de 2020.
+    </blockquote>
+    <p>Voce <abbr title="Vai tomar no cu">VTNC</abbr>, tá ligado?</p>
+    <address>
+        Narozsx.<br>
+        Assiste minha live.<br>
+        twitch.tv/narozsx.<br>
+        En mi casa.<br>
+        Bolivia :D  
+    </address>
+    <p><cite>El maldito puente</cite> fue grabado por :D no sé xd</p>
+    <br>
+    <hr>
+    <h2>Elemento Picture</h2>
+    <picture> 
+        <source media="(min-width: 500px)" srcset="valorant_pc.jpg">
+        <source media="(min-width: 300px)" srcset="jett.jpg">
+        <img src="viper.jpg" alt="Viper">
+    </picture>
+    <br>
+    <hr>
+    <h2>Elemento DIV y SPAN</h2>
+    <div style="background-color: black; color: green; padding: 20px;">
+        <h3>LORENZARDO</h3> 
+        <p> 
+            Lorem ipsum <span style="color:pink">dolor</span> sit <span style="color:white"> amet </span>consectetur adipisicing elit. Placeat, aperiam accusantium 
+            rerum sint vero quaerat unde repellat quae sit facere libero dolore nobis facilis, explicabo voluptatem nemo. 
+            Veritatis, nam totam.
+        </p>
+
+    </div>
+    <br>
+    <hr>
+    <h2>Imagen de Fondo</h2>
+    <div style="background-image: url('wallpaper.jpg'); width: 1080px; height: 720px; background-repeat: no-repeat; 
+        background-size: cover;">
+       
+    </div>
+    <br>
+    <h2>IFRAMES</h2>
+    <ul>
+        <li><a href="https://es.wikipedia.org/wiki/Valorant#:~:text=Valorant%20es%20un%20hero%20shooter,7%20de%20abril%20de%202020." target="iframe_twitch">Valorant</a></li>
+        <li><a href="https://es.wikipedia.org/wiki/Hero_shooter" target="iframe_twitch">Hero shooter</a></li>
+    </ul>
+    <iframe 
+    src="https://es.wikipedia.org/wiki/Valorant#:~:text=Valorant%20es%20un%20hero%20shooter,7%20de%20abril%20de%202020." style="width: 100%; height: 800px; border: none;"
+    name="iframe_twitch" frameborder="0"></iframe>
+</body>
+</html>
